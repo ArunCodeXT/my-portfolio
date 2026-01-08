@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Arun Kumar</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1b1b1b, #050505);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* LOADING SCREEN */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+#loader span {
+  font-size: 48px;
+  font-weight: 700;
+  animation: fall 0.6s ease forwards;
+  opacity: 0;
+}
+
+#loader span:nth-child(1){animation-delay:0.1s}
+#loader span:nth-child(2){animation-delay:0.2s}
+#loader span:nth-child(3){animation-delay:0.3s}
+#loader span:nth-child(4){animation-delay:0.4s}
+#loader span:nth-child(5){animation-delay:0.5s}
+#loader span:nth-child(6){animation-delay:0.6s}
+#loader span:nth-child(7){animation-delay:0.7s}
+
+@keyframes fall {
+  from {transform: translateY(-60px); opacity:0;}
+  to {transform: translateY(0); opacity:1;}
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(14px);
+  padding: 12px 22px;
+  border-radius: 40px;
+  display: flex;
+  gap: 18px;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px;
+}
+
+.hero-content {
+  text-align: center;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  background: linear-gradient(90deg,#fff,#aaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero h2 {
+  font-size: 22px;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.hero p {
+  max-width: 520px;
+  margin: auto;
+  color: #999;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 14px 32px;
+  border-radius: 14px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary {
+  background: white;
+  color: black;
+  border: none;
+}
+
+.primary:hover {
+  transform: translateY(-3px);
+}
+
+.secondary {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+@keyframes fadeUp {
+  from {opacity:0; transform: translateY(40px);}
+  to {opacity:1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Projects</a>
+  <a href="#">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span>Arun</span></h1>
+    <h2>AI Engineer · Python · RAG · Agents</h2>
+    <p>
+      I build real-world AI systems, intelligent agents,
+      and scalable backends with clean design and modern tech.
+    </p>
+
+    <div class="buttons">
+      <button class="primary">Hire Me</button>
+      <button class="secondary">My Work</button>
+    </div>
+  </div>
+</section>
+
+<script>
+setTimeout(() => {
+  document.getElementById("loader").style.display = "none";
+}, 1800);
+</script>
+
+</body>
+</html>
