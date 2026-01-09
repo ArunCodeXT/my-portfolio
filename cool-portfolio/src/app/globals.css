@@ -26,3 +26,15 @@ body {
 html {
   scroll-behavior: smooth;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
