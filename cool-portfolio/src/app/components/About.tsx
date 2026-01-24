@@ -20,7 +20,7 @@ export default function About() {
           className="relative w-full h-[420px] rounded-2xl overflow-hidden"
         >
           <Image
-            src="/profile.jpg"
+            src="/profile.png"
             alt="Arun Kumar A"
             fill
             className="object-cover grayscale-[20%]"
