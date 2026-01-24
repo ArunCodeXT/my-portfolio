@@ -48,3 +48,6 @@ export const projects = [
     },
   },
 ];
+export default function AdminPage() {
+  return <div>Admin</div>;
+}
