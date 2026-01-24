@@ -18,9 +18,14 @@ export default function CursorGlow() {
   return (
     <div
       id="cursor-glow"
-      className="pointer-events-none fixed z-50 w-[400px] h-[400px]
-                 -translate-x-1/2 -translate-y-1/2
-                 rounded-full bg-white/10 blur-[120px]"
+      className="
+        pointer-events-none fixed z-50
+        w-[400px] h-[400px]
+        -translate-x-1/2 -translate-y-1/2
+        rounded-full
+        bg-emerald-500/15
+        blur-[120px]
+      "
     />
   );
 }
