@@ -37,28 +37,28 @@ export default function ExperienceTimeline() {
             title="Final-Year B.Tech — Artificial Intelligence & Data Science"
             time="2022 – 2026"
             description="Building strong foundations in algorithms, data handling, and applied AI while focusing on hands-on projects."
-            accent="emerald"
+            accent="violet"
           />
 
           <TimelineItem
             title="Generative AI & System Building Focus"
             time="2024 – Present"
             description="Actively building GenAI applications, RAG systems, and AI agents with attention to architecture, tradeoffs, and scalability."
-            accent="emerald"
+            accent="violet"
           />
 
           <TimelineItem
             title="Data Structures & Algorithmic Thinking"
             time="Ongoing"
             description="Consistent problem-solving practice on LeetCode to improve reasoning, pattern recognition, and code quality."
-            accent="emerald"
+            accent="violet"
           />
 
           <TimelineItem
             title="Automation & Real-World Problem Solving"
             time="Ongoing"
             description="Designed Python automation and IoT-based systems to solve practical workflow and infrastructure problems."
-            accent="emerald"
+            accent="violet"
           />
         </div>
       </div>
@@ -77,10 +77,10 @@ function TimelineItem({
   title: string;
   time: string;
   description: string;
-  accent: "emerald" | "purple";
+  accent: "violet" | "purple";
 }) {
   const dotColor =
-    accent === "emerald" ? "bg-emerald-400" : "bg-purple-400";
+    accent === "violet" ? "bg-violet-400" : "bg-purple-400";
 
   return (
     <motion.div

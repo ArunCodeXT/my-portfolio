@@ -23,7 +23,7 @@ export default function CursorGlow() {
         w-[400px] h-[400px]
         -translate-x-1/2 -translate-y-1/2
         rounded-full
-        bg-emerald-500/15
+        bg-violet-500/15
         blur-[120px]
       "
     />

@@ -37,14 +37,14 @@ export default function ProjectCard({ project }: { project: Project }) {
         <a
           href={project.github}
           target="_blank"
-          className="underline text-emerald-400 hover:text-emerald-300"
+          className="underline text-violet-400 hover:text-violet-300"
         >
           View Code
         </a>
 
         <Link
           href={`/projects/${project.slug}`}
-          className="underline text-emerald-400 hover:text-emerald-300"
+          className="underline text-violet-400 hover:text-violet-300"
         >
           Case Study →
         </Link>

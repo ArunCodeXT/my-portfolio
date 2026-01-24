@@ -17,7 +17,7 @@ export default function Contact() {
             Contact
           </p>
 
-          <h2 className="mt-6 text-4xl md:text-5xl font-semibold tracking-tight text-green">
+          <h2 className="mt-6 text-4xl md:text-5xl font-semibold tracking-tight text-violet-400">
             Let’s work together
           </h2>
 
@@ -73,7 +73,7 @@ function ContactLink({
         text-white/60 hover:text-white
         transition-colors"
     >
-      <span className="text-white/40 group-hover:text-emerald-400 transition-colors">
+      <span className="text-white/40 group-hover:text-violet-400 transition-colors">
         {icon}
       </span>
       <span className="text-sm tracking-wide">{label}</span>

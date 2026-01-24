@@ -65,7 +65,7 @@ export default function ProblemSolving() {
                     border
                     ${
                       isActive
-                        ? "border-emerald-400/60 bg-emerald-400/10 text-emerald-300"
+                        ? "border-violet-400/60 bg-violet-400/10 text-violet-300"
                         : "border-white/10 bg-white/5 text-white/60 hover:text-white"
                     }
                   `}
@@ -84,7 +84,8 @@ export default function ProblemSolving() {
             transition={{ duration: 0.3 }}
             className="mt-6 text-sm text-white/50"
           >
-            Currently focusing on <span className="text-emerald-400">{activeFocus}</span> problems
+            Currently focusing on{" "}
+            <span className="text-violet-400">{activeFocus}</span> problems
           </motion.p>
         </div>
 
@@ -94,8 +95,8 @@ export default function ProblemSolving() {
             href="https://leetcode.com/your-username"
             target="_blank"
             className="px-6 py-3 rounded-xl
-              bg-emerald-400 text-black font-medium
-              hover:bg-emerald-300 transition"
+              bg-violet-400 text-black font-medium
+              hover:bg-violet-300 transition"
           >
             View LeetCode
           </a>
@@ -106,7 +107,7 @@ export default function ProblemSolving() {
             className="px-6 py-3 rounded-xl
               border border-white/20
               text-white/60 hover:text-white
-              hover:border-emerald-400/50 transition"
+              hover:border-violet-400/50 transition"
           >
             DSA GitHub
           </a>
@@ -136,7 +137,7 @@ function StatCard({
       className="border border-white/10 rounded-2xl p-6 bg-white/5"
     >
       <p className="text-sm text-white/50">{title}</p>
-      <p className="mt-4 text-3xl font-semibold text-emerald-400">{value}</p>
+      <p className="mt-4 text-3xl font-semibold text-violet-400">{value}</p>
       <p className="mt-2 text-sm text-white/40">{subtitle}</p>
     </motion.div>
   );

@@ -34,17 +34,17 @@ export default function GitHubSection() {
           <HighlightCard
             title="GenAI & RAG Systems"
             description="LLM-based applications, retrieval pipelines, and prompt-driven architectures."
-            accent="emerald"
+            accent="violet"
           />
           <HighlightCard
             title="AI Agents & Automation"
             description="Task-oriented agents, tool usage, and Python-based automation workflows."
-            accent="emerald"
+            accent="violet"
           />
           <HighlightCard
             title="DSA & Core Practice"
             description="Consistent problem-solving focused on patterns, clarity, and correctness."
-            accent="emerald"
+            accent="violet"
           />
         </div>
 
@@ -53,8 +53,8 @@ export default function GitHubSection() {
           <a
             href="https://github.com/ArunCodeXT"
             target="_blank"
-            className="px-6 py-3 rounded-xl bg-emerald-400 text-black font-medium
-                       hover:bg-emerald-300 transition"
+            className="px-6 py-3 rounded-xl bg-violet-400 text-black font-medium
+                       hover:bg-violet-300 transition"
           >
             Visit GitHub Profile
           </a>
@@ -64,7 +64,7 @@ export default function GitHubSection() {
             target="_blank"
             className="px-6 py-3 rounded-xl border border-white/20
                        text-white/60 hover:text-white
-                       hover:border-emerald-400/60 transition"
+                       hover:border-violet-400/60 transition"
           >
             View Repositories
           </a>
@@ -83,11 +83,11 @@ function HighlightCard({
 }: {
   title: string;
   description: string;
-  accent: "emerald" | "purple";
+  accent: "violet" | "purple";
 }) {
   const borderHover =
-    accent === "emerald"
-      ? "hover:border-emerald-400/40"
+    accent === "violet"
+      ? "hover:border-violet-400/40"
       : "hover:border-purple-400/40";
 
   return (

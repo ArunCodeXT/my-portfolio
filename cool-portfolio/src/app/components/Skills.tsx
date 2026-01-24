@@ -61,10 +61,10 @@ export default function Skills() {
                 group border border-white/10 rounded-2xl p-6
                 bg-[#0B0D0F]
                 transition hover:-translate-y-2
-                hover:shadow-[0_10px_40px_rgba(0,194,122,0.15)]
+                hover:shadow-[0_10px_40px_rgba(139,92,246,0.15)]
               "
             >
-              <div className="flex items-center gap-3 mb-4 text-emerald-400">
+              <div className="flex items-center gap-3 mb-4 text-violet-400">
                 {skill.icon}
                 <h3 className="text-lg font-semibold text-white">
                   {skill.title}

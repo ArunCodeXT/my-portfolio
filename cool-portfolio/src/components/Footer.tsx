@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-[#0B0D0F] text-white">
       <div className="max-w-6xl mx-auto px-6 py-16">
         {/* Divider */}
-        <div className="h-px bg-gradient-to-r from-transparent via-emerald-400/20 to-transparent mb-12" />
+        <div className="h-px bg-gradient-to-r from-transparent via-violet-400/20 to-transparent mb-12" />
 
         {/* Content */}
         <motion.div
@@ -36,13 +36,3 @@ export default function Footer() {
     </footer>
   );
 }
-<button
-  onClick={() => {
-    const html = document.documentElement;
-    html.dataset.theme =
-      html.dataset.theme === "purple" ? "green" : "purple";
-  }}
-  className="text-sm px-4 py-2 border border-white/20 rounded-full"
->
-  Switch Theme
-</button>

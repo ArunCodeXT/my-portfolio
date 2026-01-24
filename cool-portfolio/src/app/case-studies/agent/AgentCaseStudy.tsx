@@ -50,7 +50,7 @@ export default function AgentCaseStudy() {
       {/* HERO */}
       <section className="pt-48 pb-40 px-6 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
-          <p className="text-sm uppercase tracking-widest text-emerald-400/70">
+          <p className="text-sm uppercase tracking-widest text-violet-400/70">
             Case Study · AI Agents
           </p>
 
@@ -68,11 +68,11 @@ export default function AgentCaseStudy() {
             <a
               href="https://github.com/ArunCodeXT/ai-agents-beginner-lab"
               target="_blank"
-              className="px-6 py-3 rounded-xl bg-emerald-400/70 text-black font-medium hover:bg-emerald-300 transition"
+              className="px-6 py-3 rounded-xl bg-violet-400/70 text-black font-medium hover:bg-violet-300 transition"
             >
               View GitHub
             </a>
-            <span className="px-6 py-3 rounded-xl border border-emerald-400/70 text-emerald-300/70">
+            <span className="px-6 py-3 rounded-xl border border-violet-400/70 text-violet-300/70">
               Live Demo (Coming Soon)
             </span>
           </div>
@@ -107,13 +107,12 @@ export default function AgentCaseStudy() {
           execution, and evaluation.
         </p>
 
-
         <div className="mt-12 max-w-3xl mx-auto">
-          <div className="border border-emerald-400/20 rounded-2xl bg-emerald-400/5 p-8 text-center">
+          <div className="border border-violet-400/20 rounded-2xl bg-violet-400/5 p-8 text-center">
             <p className="text-gray-400 mb-4">
               High-level agent loop overview
             </p>
-            <div className="border border-dashed border-emerald-400/30 rounded-xl py-20 text-emerald-300/60">
+            <div className="border border-dashed border-violet-400/30 rounded-xl py-20 text-violet-300/60">
               Agent Architecture Diagram Placeholder
             </div>
           </div>
@@ -171,7 +170,7 @@ export default function AgentCaseStudy() {
         </ul>
       </Section>
 
-      <section className="py-32 text-center text-emerald-300/60">
+      <section className="py-32 text-center text-violet-300/60">
         Built with control, reasoning, and real-world autonomy in mind.
       </section>
     </main>
@@ -180,7 +179,13 @@ export default function AgentCaseStudy() {
 
 /* ---------- Components ---------- */
 
-function Section({ title, children }: { title?: string; children: React.ReactNode }) {
+function Section({
+  title,
+  children,
+}: {
+  title?: string;
+  children: React.ReactNode;
+}) {
   return (
     <motion.section
       initial={{ opacity: 0, y: 40 }}
@@ -191,7 +196,7 @@ function Section({ title, children }: { title?: string; children: React.ReactNod
     >
       <div className="max-w-4xl mx-auto px-6">
         {title && (
-          <h2 className="text-3xl font-semibold tracking-tight text-emerald-400/70">
+          <h2 className="text-3xl font-semibold tracking-tight text-violet-400/70">
             {title}
           </h2>
         )}
@@ -204,18 +209,16 @@ function Section({ title, children }: { title?: string; children: React.ReactNod
 function Divider() {
   return (
     <div className="max-w-4xl mx-auto px-6">
-      <div className="h-px bg-gradient-to-r from-transparent via-emerald-400/70 to-transparent my-24" />
+      <div className="h-px bg-gradient-to-r from-transparent via-violet-400/70 to-transparent my-24" />
     </div>
   );
 }
-
-
 
 function ReadingProgress() {
   return (
     <div className="fixed top-0 left-0 w-full h-[3px] z-50">
       <div
-        className="h-full bg-emerald-white origin-left"
+        className="h-full bg-violet-400 origin-left"
         style={{ transform: "scaleX(var(--scroll-progress))" }}
       />
     </div>

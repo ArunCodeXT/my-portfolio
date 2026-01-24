@@ -85,14 +85,14 @@ export default function Projects() {
                   <a
                     href={p.code}
                     target="_blank"
-                    className="text-emerald-400 hover:text-emerald-300"
+                    className="text-violet-400 hover:text-violet-300"
                   >
                     View Code
                   </a>
 
                   <Link
                     href={`/case-studies/${p.id}`}
-                    className="text-emerald-400 hover:text-emerald-300"
+                    className="text-violet-400 hover:text-violet-300"
                   >
                     Case Study
                   </Link>

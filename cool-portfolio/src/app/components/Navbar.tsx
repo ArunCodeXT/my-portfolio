@@ -33,8 +33,8 @@ export default function Navbar() {
             className={`px-4 py-2 rounded-full text-sm transition-all
               ${
                 active === link.name
-                  ? "bg-emerald-400/80 text-black"
-                  : "text-gray-300 hover:text-emerald-400 hover:bg-white/5"
+                  ? "bg-violet-400/80 text-black"
+                  : "text-gray-300 hover:text-violet-400 hover:bg-white/5"
               }`}
           >
             {link.name}

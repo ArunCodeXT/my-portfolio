@@ -18,7 +18,7 @@ export default function CaseStudySlide({
       className="min-h-screen flex items-center py-32 px-6 bg-[#0B0D0F]"
     >
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-6 text-white">
+        <h2 className="text-3xl font-semibold mb-6 text-violet-400">
           {title}
         </h2>
         <div className="text-white/70 text-lg">

@@ -46,13 +46,13 @@ export default function CaseStudies() {
             </h3>
 
             <p className="text-white/80">
-              <strong className="text-emerald-400">Problem:</strong> {c.problem}
+              <strong className="text-violet-400">Problem:</strong> {c.problem}
             </p>
             <p className="text-white/80">
-              <strong className="text-emerald-400">Why it matters:</strong> {c.why}
+              <strong className="text-violet-400">Why it matters:</strong> {c.why}
             </p>
             <p className="text-white/80">
-              <strong className="text-emerald-400">Approach:</strong> {c.approach}
+              <strong className="text-violet-400">Approach:</strong> {c.approach}
             </p>
 
             {/* Architecture Diagram */}
@@ -79,13 +79,13 @@ export default function CaseStudies() {
             </div>
 
             <p className="text-white/80">
-              <strong className="text-emerald-400">Tech Stack:</strong> {c.tech}
+              <strong className="text-violet-400">Tech Stack:</strong> {c.tech}
             </p>
             <p className="text-white/80">
-              <strong className="text-emerald-400">Challenges:</strong> {c.challenges}
+              <strong className="text-violet-400">Challenges:</strong> {c.challenges}
             </p>
             <p className="text-white/80">
-              <strong className="text-emerald-400">Improvements:</strong> {c.improve}
+              <strong className="text-violet-400">Improvements:</strong> {c.improve}
             </p>
           </motion.div>
         ))}

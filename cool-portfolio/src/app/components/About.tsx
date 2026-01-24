@@ -36,7 +36,7 @@ export default function About() {
           viewport={{ once: true }}
           className="space-y-6"
         >
-          <p className="text-sm uppercase tracking-widest text-emerald-400">
+          <p className="text-sm uppercase tracking-widest text-violet-400">
             Who am I?
           </p>
 
@@ -69,45 +69,44 @@ export default function About() {
           </div>
 
           {/* BUTTONS */}
-<div className="mt-10 flex items-center gap-6">
-  {/* PRIMARY BUTTON */}
-  <a
-    href="/Arun_Kumar_A_Resume.pdf"
-    target="_blank"
-    className="
-      inline-block
-      bg-emerald-500
-      hover:bg-emerald-400
-      text-black
-      px-6 py-3
-      rounded-md
-      font-medium
-      transition
-      shadow-lg
-      shadow-emerald-500/20
-    "
-  >
-    Download Resume
-  </a>
+          <div className="mt-10 flex items-center gap-6">
+            {/* PRIMARY BUTTON */}
+            <a
+              href="/Arun_Kumar_A_Resume.pdf"
+              target="_blank"
+              className="
+                inline-block
+                bg-violet-500
+                hover:bg-violet-400
+                text-black
+                px-6 py-3
+                rounded-md
+                font-medium
+                transition
+                shadow-lg
+                shadow-violet-500/20
+              "
+            >
+              Download Resume
+            </a>
 
-  {/* SECONDARY LINK */}
-  <a
-    href="#projects"
-    className="
-      inline-flex items-center
-      text-emerald-400
-      hover:text-emerald-300
-      transition
-      translate-y-[1px]
-    "
-  >
-    View My Work →
-  </a>
-</div>
+            {/* SECONDARY LINK */}
+            <a
+              href="#projects"
+              className="
+                inline-flex items-center
+                text-violet-400
+                hover:text-violet-300
+                transition
+                translate-y-[1px]
+              "
+            >
+              View My Work →
+            </a>
+          </div>
 
         </motion.div>
       </div>
     </section>
   );
 }
-

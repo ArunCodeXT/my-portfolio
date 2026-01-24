@@ -8,7 +8,6 @@ export default function Hero() {
   return (
     <section id="home" className="min-h-screen bg-black">
 
-
       {/* RIGHT IMAGE */}
       <div className="absolute inset-y-0 right-0 w-full md:w-1/2">
         <Image
@@ -30,7 +29,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="space-y-6"
         >
-          <p className="text-emerald-400 text-sm tracking-wide">
+          <p className="text-violet-400 text-sm tracking-wide">
             Hi there!
           </p>
 
@@ -45,14 +44,14 @@ export default function Hero() {
           </p>
 
           <a
-  href="#about"
-  className="inline-flex items-center gap-2
-             bg-emerald-500 hover:bg-emerald-400
-             text-black px-6 py-3 rounded-xl
-             font-medium transition"
->
-  Let’s Talk
-</a>
+            href="#about"
+            className="inline-flex items-center gap-2
+                       bg-violet-500 hover:bg-violet-400
+                       text-black px-6 py-3 rounded-xl
+                       font-medium transition"
+          >
+            Let’s Talk
+          </a>
 
         </motion.div>
       </div>

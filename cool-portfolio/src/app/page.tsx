@@ -52,7 +52,7 @@ export default function Home() {
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl font-bold tracking-widest text-emerald-400"
+            className="text-4xl font-bold tracking-widest text-violet-400"
           >
             . . .
           </motion.div>

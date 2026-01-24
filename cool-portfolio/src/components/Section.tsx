@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ReactNode } from "react";
 
 export default function Section({
   title,
@@ -20,9 +19,11 @@ export default function Section({
     >
       <div className="max-w-4xl mx-auto px-6">
         {title && (
-          <h2 className="text-3xl font-semibold tracking-tight text-center md:text-left
-                         text-white">
-            <span className="text-emerald-400">{title}</span>
+          <h2
+            className="text-3xl font-semibold tracking-tight
+                       text-center md:text-left text-white"
+          >
+            <span className="text-violet-400">{title}</span>
           </h2>
         )}
         <div className="text-white/70">

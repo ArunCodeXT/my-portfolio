@@ -9,14 +9,13 @@ export default function CaseStudyNavbar() {
         {/* Left */}
         <Link
           href="/"
-          className="text-sm text-white/60 hover:text-emerald-400 transition"
+          className="text-sm text-white/60 hover:text-violet-400 transition"
         >
           ← Back to Home
         </Link>
 
         {/* Right */}
         <div className="flex gap-6 text-sm text-white/50">
-          
         </div>
       </div>
     </nav>
