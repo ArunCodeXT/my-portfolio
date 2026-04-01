@@ -1,79 +1,94 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Code2,
-  Database,
-  Brain,
-  GitBranch,
-  Cpu,
-  Boxes,
-  Server,
-  Workflow,
-} from "lucide-react";
+import { Code2, Brain, GitBranch, Cpu } from "lucide-react";
 
 const skills = [
   {
     title: "Programming",
-    icon: <Code2 size={28} />,
+    icon: <Code2 size={22} />,
+    color: "violet",
     items: ["Python", "SQL", "DSA (LeetCode)", "Problem Solving"],
   },
   {
     title: "AI / GenAI",
-    icon: <Brain size={28} />,
+    icon: <Brain size={22} />,
+    color: "purple",
     items: ["LLMs", "Prompt Engineering", "RAG", "AI Agents"],
   },
   {
     title: "Tools",
-    icon: <GitBranch size={28} />,
+    icon: <GitBranch size={22} />,
+    color: "violet",
     items: ["Git & GitHub", "Linux", "Pandas", "Vector Databases"],
   },
   {
     title: "Concepts",
-    icon: <Cpu size={28} />,
-    items: ["System Design (Basics)", "APIs", "Automation", "Data Handling"],
+    icon: <Cpu size={22} />,
+    color: "purple",
+    items: ["System Design (Basics)", "REST APIs", "Automation", "Data Handling"],
   },
 ];
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-32 bg-black">
+    <section id="skills" className="py-32 bg-black px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
-        <motion.h2
+
+        {/* Header */}
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold mb-12 text-white"
+          className="mb-14"
         >
-          Skills
-        </motion.h2>
+          <p className="text-xs uppercase tracking-[0.2em] text-violet-400 mb-3">
+            What I work with
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
+            Skills
+          </h2>
+        </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {skills.map((skill, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
+              transition={{ duration: 0.5, delay: i * 0.08 }}
               viewport={{ once: true }}
               className="
-                group border border-white/10 rounded-2xl p-6
+                group relative border border-white/10 rounded-2xl p-6
                 bg-[#0B0D0F]
-                transition hover:-translate-y-2
-                hover:shadow-[0_10px_40px_rgba(139,92,246,0.15)]
+                hover:-translate-y-1 hover:border-violet-500/30
+                hover:bg-[#0f0f18]
+                transition-all duration-300
               "
             >
-              <div className="flex items-center gap-3 mb-4 text-violet-400">
-                {skill.icon}
-                <h3 className="text-lg font-semibold text-white">
+              {/* Glow on hover */}
+              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                style={{ boxShadow: "inset 0 0 40px rgba(139,92,246,0.06)" }}
+              />
+
+              {/* Icon + title */}
+              <div className="flex items-center gap-3 mb-5">
+                <div className="p-2 rounded-lg bg-violet-500/10 text-violet-400 border border-violet-500/20">
+                  {skill.icon}
+                </div>
+                <h3 className="text-sm font-semibold text-white">
                   {skill.title}
                 </h3>
               </div>
 
-              <ul className="space-y-2 text-white/70 text-sm">
+              {/* Items */}
+              <ul className="space-y-2.5">
                 {skill.items.map((item, idx) => (
-                  <li key={idx}>• {item}</li>
+                  <li key={idx} className="flex items-center gap-2 text-sm text-white/60">
+                    <span className="w-1 h-1 rounded-full bg-violet-500/60 flex-shrink-0" />
+                    {item}
+                  </li>
                 ))}
               </ul>
             </motion.div>
