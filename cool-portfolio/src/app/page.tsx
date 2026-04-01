@@ -14,7 +14,6 @@ import ExperienceTimeline from "@/components/CurrentlyBuilding";
 import GitHubSection from "@/components/GitHubSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-
 export default function Home() {
   const roles = [
     "AI Engineer in Progress",
